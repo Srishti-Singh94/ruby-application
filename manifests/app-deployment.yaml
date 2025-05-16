@@ -16,6 +16,7 @@ spec:
       containers:
       - name: rails
         image: sample_rails_app-web:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 3000
         env:
