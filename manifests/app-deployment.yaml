@@ -20,5 +20,6 @@ spec:
         - containerPort: 3000
         env:
         - name: RAILS_ENV
-          value: "production"
-        command: ["rails", "server", "-b", "0.0.0.0"]
+          value: "development"
+        command: ["rails", "server", "-b", "0.0.0.0", "-e", "development"]
+
